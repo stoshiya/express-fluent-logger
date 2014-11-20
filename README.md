@@ -1,4 +1,4 @@
-express-fluentd-logger
+express-fluent-logger
 ======================
 
-access logger middleware for express.js
+access logger middleware using fluentd for express.js
