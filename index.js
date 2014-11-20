@@ -22,6 +22,10 @@ exports = module.exports = function expressFluentLogger(tag, options) {
     tag = 'debug';
   }
 
+  if (typeof tag === 'undefined') {
+    tag = 'debug';
+  }
+
   options = options || { host: '127.0.0.1', port: 24224, timeout: 3.0 };
 
   logger.configure(tag, options);
