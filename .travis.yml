@@ -4,4 +4,4 @@ node_js:
 
 before_install: 
  - gem install fluentd --no-ri --no-rdoc
- - fluentd -c test/fluentd.conf
+ - fluentd -c test/fluent.conf &
