@@ -120,5 +120,5 @@ function assertLog(path, callback) {
     assert.equal(logJson['user-agent'].match(/^node-superagent\//) !== null, true);
 
     callback();
-  }, 0);
+  }, 100);
 }
