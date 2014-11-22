@@ -1,5 +1,4 @@
 var fs = require('fs');
-var async = require('async');
 var assert = require('assert');
 var request = require('supertest');
 var logger = require('..');
