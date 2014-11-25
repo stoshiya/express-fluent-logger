@@ -35,7 +35,7 @@ exports = module.exports = function expressFluentLogger(tag, options) {
     function emitHandler() {
       res.removeListener('finish', emitHandler);
       res.removeListener('close',  emitHandler);
-      logger.emit('access', {
+      var logObject = {
         'timestamp':      start.getTime(),
         'remote-address': req.ip,
         'method':         req.method,
@@ -44,9 +44,17 @@ exports = module.exports = function expressFluentLogger(tag, options) {
         'status':         res.statusCode,
         'content-length': res.get('content-length'),
         'referrer':       req.get('referrer') || '',
-        'user-agent':     req.get('user-agent'),
         'response-time':  new Date() - start
-      });
+      };
+      Object.keys(req.headers)
+        .filter(function(item) {
+          return item !== 'host' && item !== 'connection' && item !== 'referrer';
+        })
+        .forEach(function(key) {
+          key = key.toLowerCase();
+          logObject[key] = req.get(key);
+        });
+      logger.emit('access', logObject);
     }
 
     res.on('finish', emitHandler);

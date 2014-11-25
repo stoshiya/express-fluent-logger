@@ -23,6 +23,10 @@ app.get('/', function(req, res) {
 });
 ```
 
+## Parameters
+ - **tag**: String of tag name on fluentd. (default: `debug`)
+ - **options**: Object of fluentd connection. (default: `{ host: '127.0.0.1', port: 24224, timeout: 3.0 }`)
+
 ## Test
 ```sh
 $ fluentd -c test/fluent.conf &
