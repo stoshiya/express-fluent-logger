@@ -21,6 +21,8 @@ app.use(require('express-fluent-logger')());
 app.get('/', function(req, res) {
   res.send('hello world!');
 });
+
+app.listen(80);
 ```
 
 ## Parameters
