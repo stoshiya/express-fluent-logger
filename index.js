@@ -6,8 +6,6 @@
 var logger = require('fluent-logger');
 var debug = require('debug')('express-fluent-logger');
 
-logger.on('error', debug);
-
 /**
  * Create a fluent logger middleware.
  *
@@ -29,6 +27,8 @@ exports = module.exports = function expressFluentLogger(tag, options) {
   options = options || { host: '127.0.0.1', port: 24224, timeout: 3.0 };
 
   logger.configure(tag, options);
+
+  logger.on('error', debug);
 
   return function(req, res, next) {
     var start = new Date();
