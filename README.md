@@ -4,6 +4,7 @@
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
+[![Code Climate][codeclimate-image]][codeclimate-url]
 
 access logger middleware using fluentd for express.js
 
@@ -47,3 +48,5 @@ $ npm test
 [travis-url]: https://travis-ci.org/stoshiya/express-fluent-logger
 [coveralls-image]: https://img.shields.io/coveralls/stoshiya/express-fluent-logger.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/stoshiya/express-fluent-logger?branch=master
+[codeclimate-image]: https://img.shields.io/codeclimate/github/stoshiya/express-fluent-logger.svg?style=flat
+[codeclimate-url]: https://codeclimate.com/github/stoshiya/express-fluent-logger
