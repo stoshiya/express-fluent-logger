@@ -60,5 +60,5 @@ exports = module.exports = function expressFluentLogger(tag, options) {
     res.on('finish', emitHandler);
     res.on('close',  emitHandler);
     next();
-  }
+  };
 };
