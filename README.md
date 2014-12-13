@@ -39,7 +39,7 @@ $ npm test
 
 ## License
 
-[MIT](LICENSE)
+[MIT](http://stoshiya.mil-license.org)
 
 [npm-image]: https://img.shields.io/npm/v/express-fluent-logger.svg?style=flat
 [npm-url]: https://npmjs.org/package/express-fluent-logger
