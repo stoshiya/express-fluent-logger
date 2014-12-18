@@ -17,19 +17,36 @@ $ npm install express-fluent-logger
 ## Example
 ```js
 var app = require('express')();
+var logger = require('express-fluent-logger');
 
-app.use(require('express-fluent-logger')());
+app.use(logger());
 
 app.get('/', function(req, res) {
   res.send('hello world!');
 });
 
-app.listen(80);
+app.listen(3000);
 ```
 
 ## Parameters
  - **tag**: String of tag name on fluentd. (default: `debug`)
  - **options**: Object of fluentd connection. (default: `{ host: '127.0.0.1', port: 24224, timeout: 3.0 }`)
+
+## Logging HTTP response headers
+This middleware will record the http response header, if you specify `options.responseHeaders` as following.
+```js
+var app = require('express')();
+var logger = require('express-fluent-logger');
+
+app.use(logger)('tagName', { host: '127.0.0.1', port: 24224, timeout: 3.0, responseHeaders: ['x-userid'] }));
+
+app.get('/', function(req, res) {
+  res.send('hello world!');
+});
+
+app.listen(3000);
+
+```
 
 ## Test
 ```sh

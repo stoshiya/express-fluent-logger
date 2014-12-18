@@ -46,6 +46,8 @@ exports = module.exports = function expressFluentLogger(tag, options) {
         'referrer':       req.get('referrer') || req.get('referer') || '',
         'response-time':  new Date() - start
       };
+
+      // logging request headers.
       Object.keys(req.headers)
         .filter(function(key) {
           return key !== 'host' && key !== 'connection' && key !== 'referrer' && key != 'referer';
@@ -54,6 +56,18 @@ exports = module.exports = function expressFluentLogger(tag, options) {
           key = key.toLowerCase();
           logObject[key] = req.get(key);
         });
+
+      // logging response headers.
+      options.responseHeaders = options.responseHeaders || [];
+      options.responseHeaders
+        .filter(function(key) {
+          return res.get(key);
+        })
+        .forEach(function(key) {
+          key = key.toLowerCase();
+          logObject[key.toLowerCase()] = res.get(key);
+        });
+
       logger.emit('access', logObject);
     }
 

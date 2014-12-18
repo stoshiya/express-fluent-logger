@@ -18,9 +18,29 @@ var content = 'hello world.';
 var status = 202;
 
 var tag = 'debug';
-var options = { host: '127.0.0.1', port: 24224, timeout: 3.0 };
+var options     = { host: '127.0.0.1', port: 24224, timeout: 3.0 };
+var fullOptions = { host: '127.0.0.1', port: 24224, timeout: 3.0, responseHeaders: ['status', 'content-length'] };
 
 describe('express-fluent-logger', function() {
+  it('specified tag and full options', function(callback) {
+    var path = generateRandomPath();
+    var app = express();
+    app.use(logger(tag, fullOptions));
+    app.get(path, function(req, res) {
+      res.status(status).send(content);
+    });
+    request(app)
+      .get(path)
+      .expect(status, 'hello world.')
+      .end(function(err) {
+        if (err) {
+          callback(err);
+          return;
+        }
+        assertLog(path, callback);
+      });
+  });
+
   it('specified tag and options', function(callback) {
     var path = generateRandomPath();
     var app = express();
