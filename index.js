@@ -43,12 +43,12 @@ exports = module.exports = function expressFluentLogger(tag, options) {
         'http-version':   req.httpVersion,
         'status':         res.statusCode,
         'content-length': res.get('content-length'),
-        'referrer':       req.get('referrer') || '',
+        'referrer':       req.get('referrer') || req.get('referer') || '',
         'response-time':  new Date() - start
       };
       Object.keys(req.headers)
-        .filter(function(item) {
-          return item !== 'host' && item !== 'connection' && item !== 'referrer';
+        .filter(function(key) {
+          return key !== 'host' && key !== 'connection' && key !== 'referrer' && key != 'referer';
         })
         .forEach(function(key) {
           key = key.toLowerCase();
