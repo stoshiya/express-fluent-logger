@@ -1,6 +1,6 @@
 /*
  * express-fluent-logger
- * Copyright(c) 2014 Toshiya SAITOH
+ * Copyright(c) 2014-2015 Toshiya SAITOH
  */
 
 var logger = require('fluent-logger');

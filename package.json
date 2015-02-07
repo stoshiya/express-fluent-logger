@@ -27,7 +27,7 @@
   ],
   "license": {
     "type": "MIT",
-    "url": "http://stoshiya.mit-license.org/"
+    "url": "http://stoshiya.mit-license.org/2014"
   },
   "repository": "stoshiya/express-fluent-logger",
   "scripts": {
