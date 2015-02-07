@@ -133,8 +133,8 @@ function assertLog(path, callback) {
 
     if (/^v0.10/.test(process.version)) {
       assert.equal(logJson['remote-address'], null);
-    } else if (/^0.12/.test(process.version)) {
-      assert.equal(logJson['remote-address'], 'ffff:127.0.0.1');
+    } else if (/v0.1[12]/.test(process.version)) {
+      assert.equal(logJson['remote-address'], '::ffff:127.0.0.1');
     }
     assert.equal(url.parse(logJson.url).path, path);
     assert.equal(logJson['content-length'], content.length);
