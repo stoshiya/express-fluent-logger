@@ -41,7 +41,7 @@ This middleware will record the http response header, if you specify `options.re
 var app = require('express')();
 var logger = require('express-fluent-logger');
 
-app.use(logger)('tagName', { host: '127.0.0.1', port: 24224, timeout: 3.0, responseHeaders: ['x-userid'] }));
+app.use(logger('tagName', { host: '127.0.0.1', port: 24224, timeout: 3.0, responseHeaders: ['x-userid'] }));
 
 app.get('/', function(req, res) {
   res.send('hello world!');
