@@ -8,6 +8,7 @@
     "fluent-logger": "^0.2.6"
   },
   "devDependencies": {
+    "codeclimate-test-reporter": "^0.1.0",
     "coveralls": "^2.11.2",
     "express": "^4.11.2",
     "istanbul": "^0.3.5",
@@ -34,7 +35,8 @@
   },
   "repository": "stoshiya/express-fluent-logger",
   "scripts": {
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "codeclimate": "cat ./coverage/lcov.info | ./node_modules/.bin/codeclimate-test-reporter",
+    "coveralls":   "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec"
   }
 }

@@ -8,9 +8,9 @@ before_install:
  - gem install fluentd --no-ri --no-rdoc
  - fluentd -c test/fluent.conf &
 
-after_success: npm run-script coveralls
-
-after_script: cat coverage/lconv.info | codeclimate
+after_success:
+ - npm run-script codeclimate
+ - npm run-script coveralls
 
 addons:
   code_climate:
