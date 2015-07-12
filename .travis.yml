@@ -16,3 +16,5 @@ addons:
   code_climate:
     repo_token:
       secure: E8a1kV8PCPRijxWStr4wBaDie5NwEoRO3yolAW+aLVE488yWHNWfMoxtTIDx4vZ5BdsgPmpKvTOu0OUm4y3CPJsv2YJNCPsgh7gbM1VaogeNoenk9JZ6XdVXd7S6r3QTO/+SYqO7SBr/JqkiIwZDBPE71/HBwe2h7v02FM6oIn4=
+
+sudo: false
