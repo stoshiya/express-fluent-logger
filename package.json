@@ -16,7 +16,7 @@
     "supertest": "^1.0.1"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=4"
   },
   "files": [
     "README.md",
