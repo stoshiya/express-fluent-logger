@@ -8,12 +8,12 @@
     "fluent-logger": "https://github.com/fluent/fluent-logger-node.git#nodejs-4"
   },
   "devDependencies": {
-    "codeclimate-test-reporter": "^0.1.0",
-    "coveralls": "^2.11.3",
+    "codeclimate-test-reporter": "^0.1.1",
+    "coveralls": "^2.11.4",
     "express": "^4.13.3",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5",
-    "supertest": "^1.0.1"
+    "istanbul": "^0.3.22",
+    "mocha": "^2.3.3",
+    "supertest": "^1.1.0"
   },
   "engines": {
     "node": ">=4"
