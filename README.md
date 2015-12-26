@@ -7,9 +7,6 @@
 [![Code Climate][codeclimate-image]][codeclimate-url]
 [![NPM Dependency][david-image]][david-url]
 
-[![NODEI][nodei-image]][nodei-url]
-[![NODEI Download][nodei-dl-image]][nodei-url]
-
 access logger middleware using fluentd for express.js
 
 ## Install
@@ -73,6 +70,3 @@ $ npm test
 [codeclimate-url]: https://codeclimate.com/github/stoshiya/express-fluent-logger
 [david-image]: https://img.shields.io/david/stoshiya/express-fluent-logger.svg?style=flat
 [david-url]: https://david-dm.org/stoshiya/express-fluent-logger
-[nodei-image]: https://nodei.co/npm/express-fluent-logger.png?downloads=true&downloadRank=true&stars=true
-[nodei-dl-image]: https://nodei.co/npm-dl/express-fluent-logger.png?months=9&height=3
-[nodei-url]: https://nodei.co/npm/express-fluent-logger/
