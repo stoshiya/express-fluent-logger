@@ -62,7 +62,7 @@ $ npm test
 [npm-url]: https://npmjs.org/package/express-fluent-logger
 [downloads-image]: https://img.shields.io/npm/dm/express-fluent-logger.svg?style=flat
 [downloads-url]: https://npmjs.org/package/express-fluent-logger
-[travis-image]: https://img.shields.io/travis/stoshiya/express-fluent-logger.svg?style=flat
+[travis-image]: https://travis-ci.org/stoshiya/express-fluent-logger.svg?branch=master
 [travis-url]: https://travis-ci.org/stoshiya/express-fluent-logger
 [coveralls-image]: https://img.shields.io/coveralls/stoshiya/express-fluent-logger.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/stoshiya/express-fluent-logger?branch=master
