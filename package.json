@@ -5,7 +5,7 @@
   "author": "Toshiya SAITOH <stoshiya@gmail.com>",
   "dependencies": {
     "debug": "^2.2.0",
-    "fluent-logger": "https://github.com/fluent/fluent-logger-node.git#nodejs-4"
+    "fluent-logger": "https://github.com/fluent/fluent-logger-node.git"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.1.1",
