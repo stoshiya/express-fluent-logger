@@ -11,6 +11,7 @@ env:
  - CXX=g++-4.8
 
 before_install:
+ - rvm use 2.1.9 --install --binary --fuzzy
  - gem install fluentd --no-ri --no-rdoc
  - fluentd -c test/fluent.conf &
 
