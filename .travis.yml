@@ -12,7 +12,7 @@ env:
 
 before_install:
  - rvm use 2.1.9 --install --binary --fuzzy
- - gem install fluentd --no-ri --no-rdoc
+ - gem install fluentd -v "~> 0.12.0" --no-ri --no-rdoc
  - fluentd -c test/fluent.conf &
 
 after_success:
