@@ -4,16 +4,16 @@
   "version": "0.2.6",
   "author": "Toshiya SAITOH <stoshiya@gmail.com>",
   "dependencies": {
-    "debug": "^2.6.0",
+    "debug": "^2.6.1",
     "fluent-logger": "^2.2.0"
   },
   "devDependencies": {
-    "codeclimate-test-reporter": "^0.4.0",
-    "coveralls": "^2.11.15",
-    "express": "^4.13.4",
+    "codeclimate-test-reporter": "^0.4.1",
+    "coveralls": "^2.11.16",
+    "express": "^4.14.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
-    "supertest": "^2.0.1"
+    "supertest": "^3.0.0"
   },
   "engines": {
     "node": ">=0.12"
