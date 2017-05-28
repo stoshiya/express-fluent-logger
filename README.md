@@ -58,6 +58,11 @@ $ npm test
 
 [MIT](http://stoshiya.mit-license.org/2014)
 
+
+## About NodeJS version
+
+This package is compatible with NodeJS versions >= 4.
+
 [npm-image]: https://img.shields.io/npm/v/express-fluent-logger.svg?style=flat
 [npm-url]: https://npmjs.org/package/express-fluent-logger
 [downloads-image]: https://img.shields.io/npm/dm/express-fluent-logger.svg?style=flat
