@@ -1,7 +1,7 @@
 {
   "name": "express-fluent-logger",
   "description": "access logger middleware using fluentd for express.js",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "author": "Toshiya SAITOH <stoshiya@gmail.com>",
   "dependencies": {
     "debug": "^2.6.8",
