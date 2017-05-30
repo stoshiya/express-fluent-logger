@@ -5,7 +5,7 @@
   "author": "Toshiya SAITOH <stoshiya@gmail.com>",
   "dependencies": {
     "debug": "^2.6.8",
-    "fluent-logger": "^2.3.0"
+    "fluent-logger": "^2.4.0"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.4.1",
