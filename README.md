@@ -1,11 +1,12 @@
 # express-fluent-logger
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
-[![Code Climate][codeclimate-image]][codeclimate-url]
-[![NPM Dependency][david-image]][david-url]
+[![NPM Version](https://img.shields.io/npm/v/express-fluent-logger.svg?style=flat)](https://npmjs.org/package/express-fluent-logger)
+[![NPM Downloads](https://img.shields.io/npm/dm/express-fluent-logger.svg?style=flat)](https://npmjs.org/package/express-fluent-logger)
+[![Build Status](https://travis-ci.org/stoshiya/express-fluent-logger.svg?branch=master)](https://travis-ci.org/stoshiya/express-fluent-logger)
+[![Test Coverage](https://img.shields.io/coveralls/stoshiya/express-fluent-logger.svg?style=flat)](https://coveralls.io/r/stoshiya/express-fluent-logger?branch=master)
+[![Code Climate](https://img.shields.io/codeclimate/github/stoshiya/express-fluent-logger.svg?style=flat)](https://codeclimate.com/github/stoshiya/express-fluent-logger)
+[![NPM Dependency](https://img.shields.io/david/stoshiya/express-fluent-logger.svg?style=flat)](https://david-dm.org/stoshiya/express-fluent-logger)
+[![Known Vulnerabilities](https://snyk.io/test/github/stoshiya/express-fluent-logger/badge.svg)](https://snyk.io/test/github/stoshiya/express-fluent-logger)
 
 access logger middleware using fluentd for express.js
 
@@ -63,15 +64,3 @@ $ npm test
 
 This package is compatible with NodeJS versions >= 4.
 
-[npm-image]: https://img.shields.io/npm/v/express-fluent-logger.svg?style=flat
-[npm-url]: https://npmjs.org/package/express-fluent-logger
-[downloads-image]: https://img.shields.io/npm/dm/express-fluent-logger.svg?style=flat
-[downloads-url]: https://npmjs.org/package/express-fluent-logger
-[travis-image]: https://travis-ci.org/stoshiya/express-fluent-logger.svg?branch=master
-[travis-url]: https://travis-ci.org/stoshiya/express-fluent-logger
-[coveralls-image]: https://img.shields.io/coveralls/stoshiya/express-fluent-logger.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/stoshiya/express-fluent-logger?branch=master
-[codeclimate-image]: https://img.shields.io/codeclimate/github/stoshiya/express-fluent-logger.svg?style=flat
-[codeclimate-url]: https://codeclimate.com/github/stoshiya/express-fluent-logger
-[david-image]: https://img.shields.io/david/stoshiya/express-fluent-logger.svg?style=flat
-[david-url]: https://david-dm.org/stoshiya/express-fluent-logger
