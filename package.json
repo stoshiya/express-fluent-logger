@@ -5,12 +5,12 @@
   "author": "Toshiya SAITOH <stoshiya@gmail.com>",
   "dependencies": {
     "debug": "^3.1.0",
-    "fluent-logger": "^2.4.3"
+    "fluent-logger": "^2.6.2"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.5.0",
     "coveralls": "^3.0.0",
-    "express": "^4.16.0",
+    "express": "^4.16.3",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
     "supertest": "^3.0.0"

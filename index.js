@@ -39,7 +39,7 @@ exports = module.exports = function expressFluentLogger(tag, options) {
         'timestamp':      start.getTime(),
         'remote-address': req.ip,
         'method':         req.method,
-        'url':            req.protocol + '://' + req.get('host') + req.url,
+        'url':            req.protocol + '://' + req.get('host') + req.originalUrl ? req.originalUrl : req.url,
         'http-version':   req.httpVersion,
         'status':         res.statusCode,
         'content-length': res.get('content-length'),
