@@ -1,3 +1,5 @@
+"use strict";
+
 /*
  * express-fluent-logger
  * Copyright(c) 2014-2015 Toshiya SAITOH
