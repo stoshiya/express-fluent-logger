@@ -4,7 +4,7 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/express-fluent-logger.svg?style=flat)](https://npmjs.org/package/express-fluent-logger)
 [![Build Status](https://travis-ci.org/stoshiya/express-fluent-logger.svg?branch=master)](https://travis-ci.org/stoshiya/express-fluent-logger)
 [![Test Coverage](https://img.shields.io/coveralls/stoshiya/express-fluent-logger.svg?style=flat)](https://coveralls.io/r/stoshiya/express-fluent-logger?branch=master)
-[![Code Climate](https://img.shields.io/codeclimate/github/stoshiya/express-fluent-logger.svg?style=flat)](https://codeclimate.com/github/stoshiya/express-fluent-logger)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4485a652f640602082a9/maintainability)](https://codeclimate.com/github/stoshiya/express-fluent-logger/maintainability)
 [![NPM Dependency](https://img.shields.io/david/stoshiya/express-fluent-logger.svg?style=flat)](https://david-dm.org/stoshiya/express-fluent-logger)
 [![Known Vulnerabilities](https://snyk.io/test/github/stoshiya/express-fluent-logger/badge.svg)](https://snyk.io/test/github/stoshiya/express-fluent-logger)
 
