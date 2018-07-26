@@ -5,18 +5,18 @@
   "author": "Toshiya SAITOH <stoshiya@gmail.com>",
   "dependencies": {
     "debug": "^3.1.0",
-    "fluent-logger": "^2.6.2"
+    "fluent-logger": "^3.0.0"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.5.0",
     "coveralls": "^3.0.0",
     "express": "^4.16.3",
     "istanbul": "^0.4.5",
-    "mocha": "^3.5.3",
+    "mocha": "^5.2.0",
     "supertest": "^3.0.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "files": [
     "README.md",
@@ -37,6 +37,6 @@
   "scripts": {
     "codeclimate": "cat ./coverage/lcov.info | ./node_modules/.bin/codeclimate-test-reporter",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec --exit"
   }
 }

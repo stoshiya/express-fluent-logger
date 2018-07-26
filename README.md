@@ -62,5 +62,5 @@ $ npm test
 
 ## About NodeJS version
 
-This package is compatible with NodeJS versions >= 4.
+This package is compatible with NodeJS versions >= 6.
 
