@@ -4,7 +4,7 @@
   "version": "0.3.0",
   "author": "Toshiya SAITOH <stoshiya@gmail.com>",
   "dependencies": {
-    "debug": "^3.1.0",
+    "debug": "^4.0.1",
     "fluent-logger": "^3.0.0"
   },
   "devDependencies": {
