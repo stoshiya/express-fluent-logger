@@ -52,7 +52,7 @@ exports = module.exports = function expressFluentLogger(tag, options) {
       // logging request headers.
       Object.keys(req.headers)
         .filter(function(key) {
-          return key !== 'host' && key !== 'connection' && key !== 'referrer' && key != 'referer';
+          return key !== 'host' && key !== 'connection' && key !== 'referrer' && key !== 'referer';
         })
         .forEach(function(key) {
           key = key.toLowerCase();
@@ -75,7 +75,7 @@ exports = module.exports = function expressFluentLogger(tag, options) {
 
     res.on('finish', emitHandler);
     res.on('close',  emitHandler);
-    req.logger = logger
+    req.logger = logger;
     next();
   };
 };
